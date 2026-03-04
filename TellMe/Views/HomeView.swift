@@ -76,7 +76,7 @@ struct HomeView: View {
     }
 
     private func packRow(for pack: Pack) -> some View {
-        HStack(spacing: 12) {
+        HStack(alignment: .center, spacing: 16) {
             VStack(alignment: .leading, spacing: 4) {
                 Text(pack.title)
                     .font(.headline)
@@ -92,8 +92,8 @@ struct HomeView: View {
 
             Text(badgeText(for: pack))
                 .font(.caption2.weight(.semibold))
-                .padding(.horizontal, 8)
-                .padding(.vertical, 4)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 6)
                 .background(
                     Capsule()
                         .fill(
@@ -106,6 +106,15 @@ struct HomeView: View {
                     locked ? Color.secondary : Color.indigo
                 )
         }
+        .padding(16)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color(.secondarySystemBackground))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(Color.secondary.opacity(0.16), lineWidth: 1)
+        )
     }
 
     var body: some View {
@@ -122,6 +131,9 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("TellMe")
+            .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .background(Color(.systemBackground))
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     NavigationLink {

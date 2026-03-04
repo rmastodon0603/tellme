@@ -60,6 +60,247 @@
     "sortOrder": 10
   },
   {
+    "id": "base_11",
+    "packId": "base",
+    "text": "What is one ordinary moment with me that feels special to you?",
+    "sortOrder": 11
+  },
+  {
+    "id": "base_12",
+    "packId": "base",
+    "text": "What helps you feel calm and at ease when we spend time together?",
+    "sortOrder": 12
+  },
+  {
+    "id": "base_13",
+    "packId": "base",
+    "text": "What is one thing we do together that you never want us to lose?",
+    "sortOrder": 13
+  },
+  {
+    "id": "base_14",
+    "packId": "base",
+    "text": "What kind of date feels the most natural and enjoyable for us?",
+    "sortOrder": 14
+  },
+  {
+    "id": "base_15",
+    "packId": "base",
+    "text": "What is something I do that makes you feel seen?",
+    "sortOrder": 15
+  },
+  {
+    "id": "base_16",
+    "packId": "base",
+    "text": "What is one way we could make weekdays feel a little more fun?",
+    "sortOrder": 16
+  },
+  {
+    "id": "base_17",
+    "packId": "base",
+    "text": "What is one conversation with me that you remember fondly?",
+    "sortOrder": 17
+  },
+  {
+    "id": "base_18",
+    "packId": "base",
+    "text": "When do you feel most relaxed around me?",
+    "sortOrder": 18
+  },
+  {
+    "id": "base_19",
+    "packId": "base",
+    "text": "What is something you’d love for us to try together this season?",
+    "sortOrder": 19
+  },
+  {
+    "id": "base_20",
+    "packId": "base",
+    "text": "What is one thing about us that feels easy in a good way?",
+    "sortOrder": 20
+  },
+  {
+    "id": "base_21",
+    "packId": "base",
+    "text": "What kind of check-in from me feels supportive, not overwhelming?",
+    "sortOrder": 21
+  },
+  {
+    "id": "base_22",
+    "packId": "base",
+    "text": "What is one place you’d love for us to go together someday?",
+    "sortOrder": 22
+  },
+  {
+    "id": "base_23",
+    "packId": "base",
+    "text": "What is a little thing we do that makes us feel like a team?",
+    "sortOrder": 23
+  },
+  {
+    "id": "base_24",
+    "packId": "base",
+    "text": "What is something you admire about how we handle everyday life together?",
+    "sortOrder": 24
+  },
+  {
+    "id": "base_25",
+    "packId": "base",
+    "text": "What would make a quiet evening together feel especially nice to you?",
+    "sortOrder": 25
+  },
+  {
+    "id": "base_26",
+    "packId": "base",
+    "text": "What is one way I make your life easier that you appreciate?",
+    "sortOrder": 26
+  },
+  {
+    "id": "base_27",
+    "packId": "base",
+    "text": "What is one simple tradition you’d love for us to start?",
+    "sortOrder": 27
+  },
+  {
+    "id": "base_28",
+    "packId": "base",
+    "text": "What kind of compliment from me means the most to you?",
+    "sortOrder": 28
+  },
+  {
+    "id": "base_29",
+    "packId": "base",
+    "text": "What is one moment recently when you felt especially close to me?",
+    "sortOrder": 29
+  },
+  {
+    "id": "base_30",
+    "packId": "base",
+    "text": "What helps you switch from a stressful day into quality time with me?",
+    "sortOrder": 30
+  },
+  {
+    "id": "base_31",
+    "packId": "base",
+    "text": "What is one thing we do better now than we did at the beginning?",
+    "sortOrder": 31
+  },
+  {
+    "id": "base_32",
+    "packId": "base",
+    "text": "What is a part of our relationship that feels especially steady right now?",
+    "sortOrder": 32
+  },
+  {
+    "id": "base_33",
+    "packId": "base",
+    "text": "What is something playful we should do more often together?",
+    "sortOrder": 33
+  },
+  {
+    "id": "base_34",
+    "packId": "base",
+    "text": "What does quality time with me look like in its simplest form?",
+    "sortOrder": 34
+  },
+  {
+    "id": "base_35",
+    "packId": "base",
+    "text": "What kind of support from me feels best when you are tired?",
+    "sortOrder": 35
+  },
+  {
+    "id": "base_36",
+    "packId": "base",
+    "text": "What is one thing about our relationship that you feel grateful for lately?",
+    "sortOrder": 36
+  },
+  {
+    "id": "base_37",
+    "packId": "base",
+    "text": "What is one memory of us that still makes you smile right away?",
+    "sortOrder": 37
+  },
+  {
+    "id": "base_38",
+    "packId": "base",
+    "text": "What is one small way we could be more intentional with each other this week?",
+    "sortOrder": 38
+  },
+  {
+    "id": "base_39",
+    "packId": "base",
+    "text": "When do you feel most appreciated by me?",
+    "sortOrder": 39
+  },
+  {
+    "id": "base_40",
+    "packId": "base",
+    "text": "What is one thing you hope we keep protecting in our relationship?",
+    "sortOrder": 40
+  },
+  {
+    "id": "base_41",
+    "packId": "base",
+    "text": "What kind of shared routine would make our days feel better?",
+    "sortOrder": 41
+  },
+  {
+    "id": "base_42",
+    "packId": "base",
+    "text": "What is one thing I do that helps you feel more confident?",
+    "sortOrder": 42
+  },
+  {
+    "id": "base_43",
+    "packId": "base",
+    "text": "What is something you enjoy about the way we talk to each other?",
+    "sortOrder": 43
+  },
+  {
+    "id": "base_44",
+    "packId": "base",
+    "text": "What would make this season of life feel more meaningful for us as a couple?",
+    "sortOrder": 44
+  },
+  {
+    "id": "base_45",
+    "packId": "base",
+    "text": "What is one place in our everyday life where we could bring in more warmth?",
+    "sortOrder": 45
+  },
+  {
+    "id": "base_46",
+    "packId": "base",
+    "text": "What kind of gesture from me always lands well with you?",
+    "sortOrder": 46
+  },
+  {
+    "id": "base_47",
+    "packId": "base",
+    "text": "What do you think makes us feel most like partners, not just two busy people?",
+    "sortOrder": 47
+  },
+  {
+    "id": "base_48",
+    "packId": "base",
+    "text": "What is one thing you’d love us to celebrate more often?",
+    "sortOrder": 48
+  },
+  {
+    "id": "base_49",
+    "packId": "base",
+    "text": "What is one way we could make more room for fun in our relationship?",
+    "sortOrder": 49
+  },
+  {
+    "id": "base_50",
+    "packId": "base",
+    "text": "What is one thing about being with me that feels comforting to you?",
+    "sortOrder": 50
+  },
+
+  {
     "id": "between_us_1",
     "packId": "between_us",
     "text": "What do you think we do really well as a couple right now?",
@@ -102,6 +343,115 @@
     "sortOrder": 7
   },
   {
+    "id": "between_us_8",
+    "packId": "between_us",
+    "text": "What do you think our relationship brings out in you at your best?",
+    "sortOrder": 8
+  },
+  {
+    "id": "between_us_9",
+    "packId": "between_us",
+    "text": "What is one challenge we’ve handled better than you expected?",
+    "sortOrder": 9
+  },
+  {
+    "id": "between_us_10",
+    "packId": "between_us",
+    "text": "What does trust between us look like in everyday life?",
+    "sortOrder": 10
+  },
+  {
+    "id": "between_us_11",
+    "packId": "between_us",
+    "text": "What is one thing we could do to make our communication even stronger?",
+    "sortOrder": 11
+  },
+  {
+    "id": "between_us_12",
+    "packId": "between_us",
+    "text": "When do you feel like we are most in sync?",
+    "sortOrder": 12
+  },
+  {
+    "id": "between_us_13",
+    "packId": "between_us",
+    "text": "What is something about our relationship that feels different from others you’ve seen?",
+    "sortOrder": 13
+  },
+  {
+    "id": "between_us_14",
+    "packId": "between_us",
+    "text": "What kind of apology feels meaningful to you when something goes wrong?",
+    "sortOrder": 14
+  },
+  {
+    "id": "between_us_15",
+    "packId": "between_us",
+    "text": "What do you think helps us recover after tension or stress?",
+    "sortOrder": 15
+  },
+  {
+    "id": "between_us_16",
+    "packId": "between_us",
+    "text": "What is one thing you think we protect well in our relationship?",
+    "sortOrder": 16
+  },
+  {
+    "id": "between_us_17",
+    "packId": "between_us",
+    "text": "What is a pattern between us that you’d like to strengthen even more?",
+    "sortOrder": 17
+  },
+  {
+    "id": "between_us_18",
+    "packId": "between_us",
+    "text": "What does partnership mean to you when you think about us specifically?",
+    "sortOrder": 18
+  },
+  {
+    "id": "between_us_19",
+    "packId": "between_us",
+    "text": "What makes you feel like we are building something real together?",
+    "sortOrder": 19
+  },
+  {
+    "id": "between_us_20",
+    "packId": "between_us",
+    "text": "What kind of support from me makes hard seasons easier for us?",
+    "sortOrder": 20
+  },
+  {
+    "id": "between_us_21",
+    "packId": "between_us",
+    "text": "What is something we understand about each other now that took time to learn?",
+    "sortOrder": 21
+  },
+  {
+    "id": "between_us_22",
+    "packId": "between_us",
+    "text": "What kind of future conversation do you think is important for us to have soon?",
+    "sortOrder": 22
+  },
+  {
+    "id": "between_us_23",
+    "packId": "between_us",
+    "text": "What is one thing you think makes our connection resilient?",
+    "sortOrder": 23
+  },
+  {
+    "id": "between_us_24",
+    "packId": "between_us",
+    "text": "When do you feel like we are the strongest version of us?",
+    "sortOrder": 24
+  },
+  {
+    "id": "between_us_25",
+    "packId": "between_us",
+    "text": "What would help our relationship feel even more intentional this year?",
+    "sortOrder": 25
+  },
+
+  {
     "id": "deeper_about_you_1",
     "packId": "deeper_about_you",
     "text": "What is a value you try to live by that you’d like me to understand better?",
@@ -142,5 +492,113 @@
     "packId": "deeper_about_you",
     "text": "How would you like our relationship to support the person you are becoming?",
     "sortOrder": 7
+  },
+  {
+    "id": "deeper_about_you_8",
+    "packId": "deeper_about_you",
+    "text": "What is something from your past that still influences how you move through life?",
+    "sortOrder": 8
+  },
+  {
+    "id": "deeper_about_you_9",
+    "packId": "deeper_about_you",
+    "text": "What part of yourself do you wish more people understood correctly?",
+    "sortOrder": 9
+  },
+  {
+    "id": "deeper_about_you_10",
+    "packId": "deeper_about_you",
+    "text": "What kind of encouragement tends to stay with you the longest?",
+    "sortOrder": 10
+  },
+  {
+    "id": "deeper_about_you_11",
+    "packId": "deeper_about_you",
+    "text": "What does feeling grounded look like for you personally?",
+    "sortOrder": 11
+  },
+  {
+    "id": "deeper_about_you_12",
+    "packId": "deeper_about_you",
+    "text": "What is one belief about life that has changed for you over time?",
+    "sortOrder": 12
+  },
+  {
+    "id": "deeper_about_you_13",
+    "packId": "deeper_about_you",
+    "text": "What kind of season of life do you think shaped you the most?",
+    "sortOrder": 13
+  },
+  {
+    "id": "deeper_about_you_14",
+    "packId": "deeper_about_you",
+    "text": "What is something you want more space for in your life right now?",
+    "sortOrder": 14
+  },
+  {
+    "id": "deeper_about_you_15",
+    "packId": "deeper_about_you",
+    "text": "What helps you feel like you are being true to yourself?",
+    "sortOrder": 15
+  },
+  {
+    "id": "deeper_about_you_16",
+    "packId": "deeper_about_you",
+    "text": "What do you hope people who love you never stop noticing about you?",
+    "sortOrder": 16
+  },
+  {
+    "id": "deeper_about_you_17",
+    "packId": "deeper_about_you",
+    "text": "What is a fear or doubt you’ve gotten better at living with?",
+    "sortOrder": 17
+  },
+  {
+    "id": "deeper_about_you_18",
+    "packId": "deeper_about_you",
+    "text": "What kind of life would feel deeply meaningful to you, beyond success?",
+    "sortOrder": 18
+  },
+  {
+    "id": "deeper_about_you_19",
+    "packId": "deeper_about_you",
+    "text": "What is something about your inner world that takes time for people to understand?",
+    "sortOrder": 19
+  },
+  {
+    "id": "deeper_about_you_20",
+    "packId": "deeper_about_you",
+    "text": "What is one part of your personality that has become stronger with age?",
+    "sortOrder": 20
+  },
+  {
+    "id": "deeper_about_you_21",
+    "packId": "deeper_about_you",
+    "text": "What kind of support helps you be brave when something matters to you?",
+    "sortOrder": 21
+  },
+  {
+    "id": "deeper_about_you_22",
+    "packId": "deeper_about_you",
+    "text": "What is one question about yourself you’re still figuring out?",
+    "sortOrder": 22
+  },
+  {
+    "id": "deeper_about_you_23",
+    "packId": "deeper_about_you",
+    "text": "What does peace look like for you at this stage of life?",
+    "sortOrder": 23
+  },
+  {
+    "id": "deeper_about_you_24",
+    "packId": "deeper_about_you",
+    "text": "What is something you hope your future self thanks you for?",
+    "sortOrder": 24
+  },
+  {
+    "id": "deeper_about_you_25",
+    "packId": "deeper_about_you",
+    "text": "What part of who you are feels most important for me to keep learning?",
+    "sortOrder": 25
   }
 ]
