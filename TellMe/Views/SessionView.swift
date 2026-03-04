@@ -137,7 +137,8 @@ struct SessionView: View {
     let viewModel = SessionViewModel(
         packId: "base",
         packTitle: "Base",
-        allCards: previewCards
+        allCards: previewCards,
+        entitlementStore: EntitlementStore()
     )
 
     return NavigationStack {

@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @EnvironmentObject private var entitlementStore: EntitlementStore
     // Temporary static data; will be replaced by JSON-loaded data later.
     private let packs: [Pack] = [
         Pack(
@@ -47,15 +48,28 @@ struct HomeView: View {
         return allCards
     }
 
+    private func isLocked(_ pack: Pack) -> Bool {
+        pack.isLocked && !entitlementStore.isPro
+    }
+
+    private func badgeText(for pack: Pack) -> String {
+        if entitlementStore.isPro {
+            return "UNLOCKED"
+        } else {
+            return pack.id == "base" ? "FREE" : "LOCKED"
+        }
+    }
+
     @ViewBuilder
     private func destination(for pack: Pack) -> some View {
-        if pack.isLocked {
+        if isLocked(pack) {
             PaywallView()
         } else {
             let viewModel = SessionViewModel(
                 packId: pack.id,
                 packTitle: pack.title,
-                allCards: loadAllCards()
+                allCards: loadAllCards(),
+                entitlementStore: entitlementStore
             )
             SessionView(viewModel: viewModel)
         }
@@ -74,20 +88,22 @@ struct HomeView: View {
 
             Spacer()
 
-            Text(pack.isLocked ? "LOCKED" : "FREE")
+            let locked = isLocked(pack)
+
+            Text(badgeText(for: pack))
                 .font(.caption2.weight(.semibold))
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .background(
                     Capsule()
                         .fill(
-                            pack.isLocked
+                            locked
                             ? Color.secondary.opacity(0.15)
                             : Color.indigo.opacity(0.15)
                         )
                 )
                 .foregroundColor(
-                    pack.isLocked ? Color.secondary : Color.indigo
+                    locked ? Color.secondary : Color.indigo
                 )
         }
     }
@@ -122,4 +138,5 @@ struct HomeView: View {
 
 #Preview {
     HomeView()
+        .environmentObject(EntitlementStore())
 }

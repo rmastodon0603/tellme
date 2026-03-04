@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct TellMeApp: App {
+    @StateObject private var entitlementStore = EntitlementStore()
+
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(entitlementStore)
         }
     }
 }

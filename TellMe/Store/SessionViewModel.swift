@@ -13,6 +13,7 @@ final class SessionViewModel: ObservableObject {
     let shouldApplyDailyLimit: Bool
 
     private let dailyLimitStore: DailyLimitStore
+    private let entitlementStore: EntitlementStore
     private static let baseDailyLimit: Int = 10
 
     // All cards for this session (already filtered and shuffled)
@@ -39,15 +40,18 @@ final class SessionViewModel: ObservableObject {
         packId: String,
         packTitle: String? = nil,
         allCards: [Card],
-        dailyLimitStore: DailyLimitStore = DailyLimitStore()
+        dailyLimitStore: DailyLimitStore = DailyLimitStore(),
+        entitlementStore: EntitlementStore
     ) {
         self.packId = packId
         self.packTitle = packTitle
         self.dailyLimitStore = dailyLimitStore
+        self.entitlementStore = entitlementStore
 
         self.isBasePack = packId == "base"
         // For now we assume the user is a free user, so only Base applies the limit.
-        self.shouldApplyDailyLimit = isBasePack
+        // When the user is Pro, Base should not be limited.
+        self.shouldApplyDailyLimit = isBasePack && !entitlementStore.isPro
 
         // Filter cards by pack and shuffle once at the start
         let filtered = allCards.filter { $0.packId == packId }
