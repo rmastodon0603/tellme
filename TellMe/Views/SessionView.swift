@@ -22,7 +22,7 @@ struct SessionView: View {
 
             Spacer(minLength: 24)
 
-            if !viewModel.isEmpty && !viewModel.isSessionEnded {
+            if !viewModel.isEmpty && !viewModel.isSessionEnded && !viewModel.isRevealBlocked {
                 controls
             }
         }
@@ -36,7 +36,9 @@ struct SessionView: View {
 
     @ViewBuilder
     private var content: some View {
-        if viewModel.isEmpty {
+        if viewModel.isRevealBlocked {
+            paywallState
+        } else if viewModel.isEmpty {
             emptyState
         } else if viewModel.isSessionEnded {
             endedState
@@ -116,6 +118,10 @@ struct SessionView: View {
                 .frame(maxWidth: .infinity)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+    }
+
+    private var paywallState: some View {
+        PaywallView()
     }
 }
 
