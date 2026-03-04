@@ -1,0 +1,38 @@
+[
+  {
+    "id": "base",
+    "title": "Base",
+    "subtitle": "Everyday questions to start talking",
+    "isFree": true,
+    "isLocked": false,
+    "dailyFreeLimit": 10,
+    "sortOrder": 1,
+    "includedIn": [
+      "Free"
+    ]
+  },
+  {
+    "id": "between-us",
+    "title": "Between Us",
+    "subtitle": "Conversations about your relationship",
+    "isFree": false,
+    "isLocked": true,
+    "dailyFreeLimit": null,
+    "sortOrder": 2,
+    "includedIn": [
+      "Starter Pack"
+    ]
+  },
+  {
+    "id": "deeper-about-you",
+    "title": "Deeper About You",
+    "subtitle": "Go deeper into each other’s world",
+    "isFree": false,
+    "isLocked": true,
+    "dailyFreeLimit": null,
+    "sortOrder": 3,
+    "includedIn": [
+      "Starter Pack"
+    ]
+  }
+]

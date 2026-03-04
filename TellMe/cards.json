@@ -1,0 +1,146 @@
+[
+  {
+    "id": "base_1",
+    "packId": "base",
+    "text": "What is something small I do that makes your day a bit better?",
+    "sortOrder": 1
+  },
+  {
+    "id": "base_2",
+    "packId": "base",
+    "text": "What is one of your favorite memories of us from the last year?",
+    "sortOrder": 2
+  },
+  {
+    "id": "base_3",
+    "packId": "base",
+    "text": "When do you feel most connected to me during a normal week?",
+    "sortOrder": 3
+  },
+  {
+    "id": "base_4",
+    "packId": "base",
+    "text": "What is one small habit we could add to our week to feel closer?",
+    "sortOrder": 4
+  },
+  {
+    "id": "base_5",
+    "packId": "base",
+    "text": "How do you like to be comforted when you’ve had a tough day?",
+    "sortOrder": 5
+  },
+  {
+    "id": "base_6",
+    "packId": "base",
+    "text": "What is something you appreciate about our daily routine together?",
+    "sortOrder": 6
+  },
+  {
+    "id": "base_7",
+    "packId": "base",
+    "text": "What is one thing you’d like us to do more often as a couple?",
+    "sortOrder": 7
+  },
+  {
+    "id": "base_8",
+    "packId": "base",
+    "text": "What is a simple moment with me that you’ve enjoyed recently?",
+    "sortOrder": 8
+  },
+  {
+    "id": "base_9",
+    "packId": "base",
+    "text": "How can I better support you in your current season of life?",
+    "sortOrder": 9
+  },
+  {
+    "id": "base_10",
+    "packId": "base",
+    "text": "What is something you’re looking forward to with me this month?",
+    "sortOrder": 10
+  },
+  {
+    "id": "between_us_1",
+    "packId": "between_us",
+    "text": "What do you think we do really well as a couple right now?",
+    "sortOrder": 1
+  },
+  {
+    "id": "between_us_2",
+    "packId": "between_us",
+    "text": "When do you feel most understood by me?",
+    "sortOrder": 2
+  },
+  {
+    "id": "between_us_3",
+    "packId": "between_us",
+    "text": "What is one way our relationship has changed you for the better?",
+    "sortOrder": 3
+  },
+  {
+    "id": "between_us_4",
+    "packId": "between_us",
+    "text": "How do you like us to handle disagreements when they come up?",
+    "sortOrder": 4
+  },
+  {
+    "id": "between_us_5",
+    "packId": "between_us",
+    "text": "What is something you wish we talked about a little more often?",
+    "sortOrder": 5
+  },
+  {
+    "id": "between_us_6",
+    "packId": "between_us",
+    "text": "What helps you feel emotionally safe with me?",
+    "sortOrder": 6
+  },
+  {
+    "id": "between_us_7",
+    "packId": "between_us",
+    "text": "What is one hope you have for our relationship in the next year?",
+    "sortOrder": 7
+  },
+  {
+    "id": "deeper_about_you_1",
+    "packId": "deeper_about_you",
+    "text": "What is a value you try to live by that you’d like me to understand better?",
+    "sortOrder": 1
+  },
+  {
+    "id": "deeper_about_you_2",
+    "packId": "deeper_about_you",
+    "text": "Growing up, what shaped the way you think about love and commitment?",
+    "sortOrder": 2
+  },
+  {
+    "id": "deeper_about_you_3",
+    "packId": "deeper_about_you",
+    "text": "What is something you rarely talk about but feel comfortable sharing with me?",
+    "sortOrder": 3
+  },
+  {
+    "id": "deeper_about_you_4",
+    "packId": "deeper_about_you",
+    "text": "When do you feel most proud of the person you are?",
+    "sortOrder": 4
+  },
+  {
+    "id": "deeper_about_you_5",
+    "packId": "deeper_about_you",
+    "text": "What is a personal dream or goal you’d love me to cheer you on in?",
+    "sortOrder": 5
+  },
+  {
+    "id": "deeper_about_you_6",
+    "packId": "deeper_about_you",
+    "text": "What is something you’ve learned about yourself in the last few years?",
+    "sortOrder": 6
+  },
+  {
+    "id": "deeper_about_you_7",
+    "packId": "deeper_about_you",
+    "text": "How would you like our relationship to support the person you are becoming?",
+    "sortOrder": 7
+  }
+]
