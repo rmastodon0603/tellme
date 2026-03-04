@@ -36,7 +36,7 @@ struct HomeView: View {
         packs.sorted { $0.sortOrder < $1.sortOrder }
     }
 
-    private func loadCards(forPackId packId: String) -> [Card] {
+    private func loadAllCards() -> [Card] {
         guard
             let url = Bundle.main.url(forResource: "cards", withExtension: "json"),
             let data = try? Data(contentsOf: url),
@@ -44,10 +44,7 @@ struct HomeView: View {
         else {
             return []
         }
-
         return allCards
-            .filter { $0.packId == packId }
-            .sorted { $0.sortOrder < $1.sortOrder }
     }
 
     @ViewBuilder
@@ -55,10 +52,12 @@ struct HomeView: View {
         if pack.isLocked {
             PaywallView()
         } else {
-            SessionView(
+            let viewModel = SessionViewModel(
+                packId: pack.id,
                 packTitle: pack.title,
-                cards: loadCards(forPackId: pack.id)
+                allCards: loadAllCards()
             )
+            SessionView(viewModel: viewModel)
         }
     }
 

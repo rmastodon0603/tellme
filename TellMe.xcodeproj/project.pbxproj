@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		2D61190A2F58AD5D002D05B3 /* TellMe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TellMe.xcodeproj; sourceTree = "<group>"; };
+		2D61192E2F58B571002D05B3 /* TellMe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TellMe.xcodeproj; sourceTree = "<group>"; };
 		2D6FD3122F58AA3300A806DA /* TellMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TellMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6FD3222F58AAF400A806DA /* TellMe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = TellMe.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +33,11 @@
 
 /* Begin PBXGroup section */
 		2D61190C2F58AD5D002D05B3 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D6119302F58B571002D05B3 /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
@@ -117,6 +123,10 @@
 				{
 					ProductGroup = 2D61190C2F58AD5D002D05B3 /* Products */;
 					ProjectRef = 2D61190A2F58AD5D002D05B3 /* TellMe.xcodeproj */;
+				},
+				{
+					ProductGroup = 2D6119302F58B571002D05B3 /* Products */;
+					ProjectRef = 2D61192E2F58B571002D05B3 /* TellMe.xcodeproj */;
 				},
 			);
 			projectRoot = "";
