@@ -1,0 +1,34 @@
+{
+  "identifier" : "TellMe",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "A1B2C3D4",
+      "localizations" : [
+        {
+          "description" : "Unlock unlimited Base cards and 2 premium packs.",
+          "displayName" : "Starter Pack",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "starter_pack",
+      "referenceName" : "Starter Pack",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "locale" : "en_US",
+    "storefront" : "USA"
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

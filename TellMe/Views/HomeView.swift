@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     @EnvironmentObject private var entitlementStore: EntitlementStore
+    @EnvironmentObject private var purchaseManager: PurchaseManager
     // Temporary static data; will be replaced by JSON-loaded data later.
     private let packs: [Pack] = [
         Pack(
@@ -145,10 +146,15 @@ struct HomeView: View {
             }
             .tint(.indigo)
         }
+        .task {
+            await purchaseManager.refreshEntitlements()
+        }
     }
 }
 
 #Preview {
+    let store = EntitlementStore()
     HomeView()
-        .environmentObject(EntitlementStore())
+        .environmentObject(store)
+        .environmentObject(PurchaseManager(entitlementStore: store))
 }

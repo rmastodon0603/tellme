@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject private var purchaseManager: PurchaseManager
+
     var body: some View {
         List {
             Section("About Tell Me") {
@@ -28,9 +30,11 @@ struct SettingsView: View {
             }
 
             Section("Purchases") {
-                Button("Restore Purchases (coming soon)") {}
-                    .foregroundStyle(.primary)
-                    .disabled(true)
+                Button("Restore Purchases") {
+                    Task { await purchaseManager.restorePurchases() }
+                }
+                .foregroundStyle(.primary)
+                .disabled(purchaseManager.purchaseInProgress)
             }
         }
         .navigationTitle("Settings")
@@ -39,7 +43,9 @@ struct SettingsView: View {
 }
 
 #Preview {
-    NavigationStack {
+    let store = EntitlementStore()
+    return NavigationStack {
         SettingsView()
+            .environmentObject(PurchaseManager(entitlementStore: store))
     }
 }

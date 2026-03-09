@@ -30,7 +30,11 @@ final class PurchaseManager: ObservableObject {
             let products = try await Product.products(for: [Self.starterPackProductId])
             product = products.first
             if product == nil {
+                #if DEBUG
+                lastError = "Product not found. Select TellMe.storekit in scheme: Edit Scheme → Run → Options → StoreKit Configuration."
+                #else
                 lastError = "Product not found"
+                #endif
             }
         } catch {
             lastError = error.localizedDescription

@@ -134,14 +134,17 @@ struct SessionView: View {
             sortOrder: 1
         )
     ]
+    let store = EntitlementStore()
     let viewModel = SessionViewModel(
         packId: "base",
         packTitle: "Base",
         allCards: previewCards,
-        entitlementStore: EntitlementStore()
+        entitlementStore: store
     )
 
     return NavigationStack {
         SessionView(viewModel: viewModel)
+            .environmentObject(PurchaseManager(entitlementStore: store))
+            .environmentObject(store)
     }
 }
