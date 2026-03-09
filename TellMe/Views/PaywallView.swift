@@ -1,10 +1,9 @@
 import SwiftUI
 
 struct PaywallView: View {
+    @Environment(\.dismiss) private var dismiss
     @EnvironmentObject private var purchaseManager: PurchaseManager
-    #if DEBUG
     @EnvironmentObject private var entitlementStore: EntitlementStore
-    #endif
 
     var body: some View {
         VStack(spacing: 20) {
@@ -16,7 +15,12 @@ struct PaywallView: View {
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
 
-            if let error = purchaseManager.lastError {
+            if let feedback = purchaseManager.restoreFeedback {
+                Text(feedback)
+                    .font(.caption)
+                    .foregroundStyle(feedback.hasPrefix("Restore failed") || feedback == "No purchases to restore" ? Color.red : Color.secondary)
+                    .multilineTextAlignment(.center)
+            } else if let error = purchaseManager.lastError {
                 Text(error)
                     .font(.caption)
                     .foregroundStyle(.red)
@@ -82,6 +86,11 @@ struct PaywallView: View {
         .task {
             await purchaseManager.loadProducts()
             await purchaseManager.refreshEntitlements()
+        }
+        .onChange(of: entitlementStore.isPro) { _, isPro in
+            if isPro {
+                dismiss()
+            }
         }
     }
 }

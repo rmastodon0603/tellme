@@ -30,11 +30,25 @@ struct SettingsView: View {
             }
 
             Section("Purchases") {
-                Button("Restore Purchases") {
-                    Task { await purchaseManager.restorePurchases() }
+                if purchaseManager.purchaseInProgress {
+                    HStack {
+                        Text("Restoring…")
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        ProgressView()
+                    }
+                } else {
+                    Button("Restore Purchases") {
+                        Task { await purchaseManager.restorePurchases() }
+                    }
+                    .foregroundStyle(.primary)
                 }
-                .foregroundStyle(.primary)
-                .disabled(purchaseManager.purchaseInProgress)
+
+                if let feedback = purchaseManager.restoreFeedback {
+                    Text(feedback)
+                        .font(.subheadline)
+                        .foregroundStyle(feedback.hasPrefix("Restore failed") || feedback == "No purchases to restore" ? Color.red : Color.secondary)
+                }
             }
         }
         .navigationTitle("Settings")

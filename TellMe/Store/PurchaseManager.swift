@@ -12,6 +12,7 @@ final class PurchaseManager: ObservableObject {
     @Published private(set) var product: Product?
     @Published private(set) var purchaseInProgress = false
     @Published private(set) var lastError: String?
+    @Published private(set) var restoreFeedback: String?
 
     var isPurchased: Bool {
         entitlementStore.isPro
@@ -24,6 +25,7 @@ final class PurchaseManager: ObservableObject {
     func loadProducts() async {
         isLoadingProducts = true
         lastError = nil
+        restoreFeedback = nil
         defer { isLoadingProducts = false }
 
         do {
@@ -49,6 +51,7 @@ final class PurchaseManager: ObservableObject {
         }
         purchaseInProgress = true
         lastError = nil
+        restoreFeedback = nil
         defer { purchaseInProgress = false }
 
         do {
@@ -79,9 +82,32 @@ final class PurchaseManager: ObservableObject {
     func restorePurchases() async {
         purchaseInProgress = true
         lastError = nil
+        restoreFeedback = nil
         defer { purchaseInProgress = false }
 
+        let wasProBefore = entitlementStore.isPro
+        var syncFailed = false
+        var syncError: String?
+
+        do {
+            try await AppStore.sync()
+        } catch {
+            syncFailed = true
+            syncError = error.localizedDescription
+        }
+
         await refreshEntitlements()
+        let isProAfter = entitlementStore.isPro
+
+        if syncFailed && !isProAfter {
+            restoreFeedback = "Restore failed. \(syncError ?? "Please try again.")"
+        } else if wasProBefore && isProAfter {
+            restoreFeedback = "You're already unlocked."
+        } else if !wasProBefore && isProAfter {
+            restoreFeedback = "Purchases restored."
+        } else {
+            restoreFeedback = "No purchases to restore"
+        }
     }
 
     /// Re-checks current transactions and updates entitlement (isPro) accordingly.
